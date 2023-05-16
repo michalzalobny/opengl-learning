@@ -8,9 +8,10 @@
         "-fcolor-diagnostics",
         "-fansi-escape-codes",
         "-g",
-        "${file}",
+        "${workspaceFolder}/main.cpp",
+        "${workspaceFolder}/glad/glad.c",
         "-o",
-        "${fileDirname}/${fileBasenameNoExtension}",
+        "${workspaceFolder}/main",
         "-I/opt/homebrew/include",
         "-L/opt/homebrew/lib",
         "-lglfw",
@@ -18,7 +19,7 @@
         "OpenGL"
       ],
       "options": {
-        "cwd": "${fileDirname}"
+        "cwd": "${workspaceFolder}"
       },
       "problemMatcher": ["$gcc"],
       "group": {
