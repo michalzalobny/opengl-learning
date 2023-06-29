@@ -28,7 +28,7 @@ int main()
 
     // glfw window creation
     // --------------------
-    GLFWwindow *window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
+    GLFWwindow *window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "OpenGL", NULL, NULL);
     if (window == NULL)
     {
         std::cout << "Failed to create GLFW window" << std::endl;
@@ -93,8 +93,13 @@ int main()
         glClear(GL_COLOR_BUFFER_BIT);
 
         // render the triangle
+
+        // Update uniform based on time
+        float timeValue = glfwGetTime();
+        float sined = (sin(timeValue) / 2.0f) + 0.5f;
+
         ourShader.use();
-        ourShader.setFloat("xOffset", 0.5f);
+        ourShader.setFloat("xOffset", sined);
         glBindVertexArray(VAO);
         glDrawArrays(GL_TRIANGLES, 0, 3);
 
