@@ -10,6 +10,7 @@
         "-g",
         "${workspaceFolder}/main.cpp",
         "${workspaceFolder}/glad/glad.c",
+        "${workspaceFolder}/stb_image_implementation.cpp", // add this line
         "-o",
         "${workspaceFolder}/main",
         "-I/opt/homebrew/include",
