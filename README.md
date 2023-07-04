@@ -13,4 +13,4 @@ To debug the file, navigate to it and press `CMD + SHIFT + D` and click the gree
 Examples : https://github.com/JoeyDeVries/LearnOpenGL/tree/master/src/1.getting_started
 Book: https://learnopengl.com/book/book_pdf.pdf
 
-Current page: 54
+Current page: 62
